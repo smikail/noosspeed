@@ -2,6 +2,9 @@ do
 
 -- Recursive function
 local function getRandomButts(attempt)
+   if not is_sudo(msg) then
+              return "Only Sudoers Can Fuck😆"
+       end
   attempt = attempt or 0
   attempt = attempt + 1
 
@@ -64,7 +67,9 @@ return {
   },
   patterns = {
     "^!boobs$",
-    "^!butts$"
+    "^!butts$",
+    "^(boobs)$",
+    "^(butts)$"
   }, 
   run = run 
 }
