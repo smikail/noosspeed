@@ -456,7 +456,7 @@ function run(msg, matches)
 		chat_info(receiver, returnids, {receiver=receiver})
 	end
 
-    if matches[1] == 'creategroup' and matches[2] then
+    if matches[1] == 'newgp' and matches[2] then
         group_name = matches[2]
         group_type = 'group'
         return create_group(msg)
@@ -466,7 +466,7 @@ function run(msg, matches)
 		return  --Do nothing
 	end
 
-    if matches[1] == 'createrealm' and matches[2] then
+    if matches[1] == 'newrealm' and matches[2] then
         group_name = matches[2]
         group_type = 'realm'
         return create_realm(msg)
@@ -599,7 +599,7 @@ function run(msg, matches)
 				chat_info(receiver, username_id, {mod_cmd= mod_cmd, receiver=receiver, member=member})
 			end
 		end
-		if matches[1] == 'removeadmin' then
+		if matches[1] == 'remadmin' then
 			if string.match(matches[2], '^%d+$') then
 				local admin_id = matches[2]
 				print("user "..admin_id.." has been demoted")
@@ -654,7 +654,7 @@ end
 
 return {
   patterns = {
-    "^[!/](creategroup) (.*)$",
+    "^[!/](newgp) (.*)$",
     "^[!/](createrealm) (.*)$",
     "^[!/](setabout) (%d+) (.*)$",
     "^[!/](setrules) (%d+) (.*)$",
@@ -670,10 +670,29 @@ return {
     "^[!/](kill) (chat) (%d+)$",
     "^[!/](kill) (realm) (%d+)$",
     "^[!/](addadmin) (.*)$", -- sudoers only
-    "^[!/](removeadmin) (.*)$", -- sudoers only
+    "^[!/](remadmin) (.*)$", -- sudoers only
     "^[!/](list) (.*)$",
         "^[!/](log)$",
         "^[!/](help)$",
+      "^([Nn]ewgp) (.*)$", 
+       "^([Cc]reaterealm) (.*)$",
+       "^([Ss]etabout) (%d+) (.*)$",
+       "^([Ss]etrules) (%d+) (.*)$",
+       "^([Ss]etgpname) (%d+) (.*)$",
+        "^([Ss]etname) (%d+) (.*)$",
+        "^([Ll]ock) (%d+) (.*)$",
+        "^([Uu]nlock) (%d+) (.*)$",
+        "^([Ss]etting) (%d+)$",
+        "^([Ww]ho)$",
+        "^([Tt]ype)$",
+    "^([Kk]ill) (chat) (%d+)$",
+    "^([Kk]ill) (realm) (%d+)$",
+    "^([Aa]ddadmin) (.*)$", -- sudoers only
+    "^([Rr]emadmin) (.*)$", -- sudoers only
+    "^([Ll]ist) (.*)$",
+        "^([Ll]og)$",
+        "^([Hh]elp)$",
+        "^([Ww]holist)$",
         "^!!tgservice (.+)$",
   },
   run = run
