@@ -655,7 +655,7 @@ end
 return {
   patterns = {
     "^[!/](newgp) (.*)$",
-    "^[!/](createrealm) (.*)$",
+    "^[!/](newrealm) (.*)$",
     "^[!/](setabout) (%d+) (.*)$",
     "^[!/](setrules) (%d+) (.*)$",
     "^[!/](setname) (.*)$",
@@ -675,7 +675,7 @@ return {
         "^[!/](log)$",
         "^[!/](help)$",
       "^([Nn]ewgp) (.*)$", 
-       "^([Cc]reaterealm) (.*)$",
+       "^([Nn]ewrealm) (.*)$",
        "^([Ss]etabout) (%d+) (.*)$",
        "^([Ss]etrules) (%d+) (.*)$",
        "^([Ss]etgpname) (%d+) (.*)$",
