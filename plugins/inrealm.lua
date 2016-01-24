@@ -456,7 +456,7 @@ function run(msg, matches)
 		chat_info(receiver, returnids, {receiver=receiver})
 	end
 
-    if matches[1] == 'newgp' and matches[2] then
+    if matches[1] == 'creategroup' and matches[2] then
         group_name = matches[2]
         group_type = 'group'
         return create_group(msg)
@@ -466,7 +466,7 @@ function run(msg, matches)
 		return  --Do nothing
 	end
 
-    if matches[1] == 'newrealm' and matches[2] then
+    if matches[1] == 'createrealm' and matches[2] then
         group_name = matches[2]
         group_type = 'realm'
         return create_realm(msg)
@@ -654,8 +654,8 @@ end
 
 return {
   patterns = {
-    "^[!/](newgroup) (.*)$",
-    "^[!/](newrealm) (.*)$",
+    "^[!/](creategroup) (.*)$",
+    "^[!/](creategroup) (.*)$",
     "^[!/](setabout) (%d+) (.*)$",
     "^[!/](setrules) (%d+) (.*)$",
     "^[!/](setname) (.*)$",
@@ -674,8 +674,8 @@ return {
     "^[!/](list) (.*)$",
         "^[!/](log)$",
         "^[!/](help)$",
-      "^([Nn]ewgroup) (.*)$", 
-       "^([Nn]ewrealm) (.*)$",
+      "^([Cc]reategroup) (.*)$", 
+       "^([Cc]reaterealm) (.*)$",
        "^([Ss]etabout) (%d+) (.*)$",
        "^([Ss]etrules) (%d+) (.*)$",
        "^([Ss]etgpname) (%d+) (.*)$",
