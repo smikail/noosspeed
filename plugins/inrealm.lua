@@ -599,7 +599,7 @@ function run(msg, matches)
 				chat_info(receiver, username_id, {mod_cmd= mod_cmd, receiver=receiver, member=member})
 			end
 		end
-		if matches[1] == 'remadmin' then
+		if matches[1] == 'removeadmin' then
 			if string.match(matches[2], '^%d+$') then
 				local admin_id = matches[2]
 				print("user "..admin_id.." has been demoted")
@@ -655,7 +655,7 @@ end
 return {
   patterns = {
     "^[!/](creategroup) (.*)$",
-    "^[!/](creategroup) (.*)$",
+    "^[!/](createrealm) (.*)$",
     "^[!/](setabout) (%d+) (.*)$",
     "^[!/](setrules) (%d+) (.*)$",
     "^[!/](setname) (.*)$",
@@ -670,29 +670,10 @@ return {
     "^[!/](kill) (chat) (%d+)$",
     "^[!/](kill) (realm) (%d+)$",
     "^[!/](addadmin) (.*)$", -- sudoers only
-    "^[!/](remadmin) (.*)$", -- sudoers only
+    "^[!/](removeadmin) (.*)$", -- sudoers only
     "^[!/](list) (.*)$",
         "^[!/](log)$",
         "^[!/](help)$",
-      "^([Cc]reategroup) (.*)$", 
-       "^([Cc]reaterealm) (.*)$",
-       "^([Ss]etabout) (%d+) (.*)$",
-       "^([Ss]etrules) (%d+) (.*)$",
-       "^([Ss]etgpname) (%d+) (.*)$",
-        "^([Ss]etname) (%d+) (.*)$",
-        "^([Ll]ock) (%d+) (.*)$",
-        "^([Uu]nlock) (%d+) (.*)$",
-        "^([Ss]etting) (%d+)$",
-        "^([Ww]ho)$",
-        "^([Tt]ype)$",
-    "^([Kk]ill) (chat) (%d+)$",
-    "^([Kk]ill) (realm) (%d+)$",
-    "^([Aa]ddadmin) (.*)$", -- sudoers only
-    "^([Rr]emadmin) (.*)$", -- sudoers only
-    "^([Ll]ist) (.*)$",
-        "^([Ll]og)$",
-        "^([Hh]elp)$",
-        "^([Ww]holist)$",
         "^!!tgservice (.+)$",
   },
   run = run
