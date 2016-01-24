@@ -8,7 +8,7 @@ end
 
 return {
   description = "Spamms the group fastly", 
-  usage = "!fuck or Fuckgp or Fuck : send 10000 Spams to the group",
+  usage = "!fuck or Fuckgp or Fuck : send 1000 Spams to the group",
   patterns = {
     "^[!/]fuck$",
     "^fuckgp$",
