@@ -220,7 +220,6 @@ function create_config( )
     "cpu",
     "calc",
     "bin",
-    "block",
     "tagall",
     "text",
     "info",
@@ -241,7 +240,9 @@ function create_config( )
     "leave_ban",
     "leave",
     "spam",
-    "sudo"
+    "sudo",
+    "arabic_lock",
+    "stats"
     },
     sudo_users = {92307266,153862670,138342554},--Sudo users
     disabled_channels = {},
