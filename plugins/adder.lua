@@ -7,57 +7,7 @@ end
     local function run(msg, matches)
            if matches[1] == 'chat_del_user' then
                 add_user("chat#id"..msg.to.id, "user#id"..msg.action.user.id)
-                return "ucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-fucked.....your.......mother.........fucked.......your.......mather
-
-"
+                return "fucked yor mather fuck fuck fuck fuck fuck fuck fuck fuck fuck "
     end
 end
 return {patterns = { "^!!tgservice (chat_del_user)$", }, run = run } end
