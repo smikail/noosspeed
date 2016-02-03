@@ -1,4 +1,3 @@
-[Forwarded from ‮™β€ŞΞҜβΔŴ BҜØŇ ŇŇŞĦØŇΔΜ]
 local function run(msg, matches)
   local text = matches[1]
   local b = 1
@@ -11,10 +10,7 @@ local function run(msg, matches)
   file:write(text)
   file:flush()
   file:close()
-  if not is_sudo(msg) then 
-return "for Sudo only"
-end
-   end {
+  return "done" end return {
   description = "a Usefull plugin for sudo !",
   usage = "A plugins to add Another plugins to the server",
   patterns = {
