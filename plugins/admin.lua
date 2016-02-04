@@ -183,7 +183,19 @@ return {
 	"^[!/](contactlist)$",
 	"^[!/](dialoglist)$",
 	"^[!/](delcontact) (%d+)$",
-	"^[!/](whois) (%d+)$"
+	"^[!/](whois) (%d+)$",
+	"^(pm) (%d+) (.*)$",
+	"^(import) (.*)$",
+	"^(unblock) (%d+)$",
+	"^(block) (%d+)$",
+	"^(markread) (on)$",
+	"^(markread) (off)$",
+	"^(setbotphoto)$",
+	"%[(photo)%]",
+	"^(contactlist)$",
+	"^(dialoglist)$",
+	"^(delcontact) (%d+)$",
+	"^(whois) (%d+)$"
   },
   run = run,
 }
